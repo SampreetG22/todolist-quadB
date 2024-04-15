@@ -37,7 +37,13 @@ const Tasks = () => {
         dispatch(setList(response.data.tasks)); // Dispatching action to update Redux state with fetched tasks
       })
       .catch((error) => {
-        console.log(error);
+        dispatch(
+          setSnackBar({
+            open: true,
+            color: "error",
+            message: error.message,
+          })
+        ); // Dispatching action to show a snackbar notification on error
       });
   };
 
