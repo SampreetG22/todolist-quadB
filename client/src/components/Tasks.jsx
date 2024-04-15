@@ -300,7 +300,9 @@ const Tasks = () => {
             </Button>
           </div>
         </div>
-        <p>Note: Start the server in server folder, then npm start </p>
+        <p style={{ fontSize: "1vw" }}>
+          Note: Start the server in server folder, then npm start{" "}
+        </p>
       </div>
       {/* Snackbar for showing notifications */}
       <Snackbar
